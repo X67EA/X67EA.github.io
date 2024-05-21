@@ -1,0 +1,524 @@
+:root {
+    --primary: #7AA2E3;
+    --bg: #010101;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: rgba(1,1,1,0.8);
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.navbar .navbar-logo a {
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.navbar .navbar-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav a {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    display: block;
+    content: '';
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    align-items: center;
+}
+
+.hero .content {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.hero .content h1 {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.hero .content .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--primary);
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 3, 0.5);
+    margin-top: 15px;
+}
+
+.hero .content a:hover {
+    color: #7AA2E3;
+    background-color: #333333;
+}
+
+/* about */
+.about {
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex:  1  1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* services */
+.services {
+    padding: 8rem 7% 1.4rem;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.services h2 span {
+    color: var(--primary);
+}
+
+.services .row {
+    display: flex;
+}
+
+.services .row .services-foto-1 {
+    flex: 1 1 45rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.services .row .services-foto-1 img {
+    width: 100%;
+}
+
+.services .row .services-foto-2 {
+    flex: 1 1 45rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.services .row .services-foto-2 img {
+    width: 100%;
+}
+
+/* .services .package {
+    display: flex;
+} */
+
+/* .services .package .paket1 {
+    flex: 1 1 45rem;
+    margin-top: 15px;
+    margin-right: 10px;
+} */
+
+/* .services .package .paket1 img {
+    width: 100%;
+} */
+
+/* .services .package .paket1 h3 {
+    text-align: center;
+    font-size: 1.8rem;
+} */
+
+/* .services .package .paket1 p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+} */
+
+/* .services .package .paket2 {
+    flex: 1 1 45rem;
+    margin-top: 15px;
+    margin-left: 10px;
+} */
+
+/* .services .package .paket2 img {
+    width: 100%;
+} */
+
+/* .services .package .paket2 h3 {
+    text-align: center;
+    font-size: 1.8rem;
+} */
+
+/* .services .package .paket2 p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+} */
+
+/* contact */
+.contact {
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    object-fit: cover;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact h2 span {
+    color: var(--primary);
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.contact .row .map {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .social-media {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+footer .social-media a {
+    color: #ffffff;
+    margin: 1rem;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: #ffffff;
+    padding: 0.7rem 1rem;
+}
+
+footer .social-media a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+}
+
+footer .credit a:hover {
+    color: #ffffff;
+}
+
+/* back-to-top */
+footer .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg);
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+footer .back-to-top.show {
+    display: block;
+}
+
+footer .order {
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ECE5DD;
+    color: #128C7E;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    padding-top: 7px;
+}
+
+/* media queries */
+/* laptop/pc */
+@media (max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+        font-size: 3rem;
+        margin-right: 15px;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--primary);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 3rem;
+    }
+
+    .navbar .navbar-logo {
+        margin-right: 180px;
+    }
+
+    .navbar .navbar-logo a {
+        font-size: 2.2rem;
+    }
+
+    .hero .content h1 {
+        font-size: 4rem;
+    }
+
+    .hero .content p {
+        font-size: 2.8rem;
+    }
+
+    .hero .content .cta {
+        font-size: 2.5rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2.4rem;
+    }
+
+    .about .row .content p {
+        font-size: 2.1rem;
+    }
+
+    .services .row {
+        flex-wrap: wrap;
+    }
+
+    .services h2 {
+        font-size: 3rem;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+        margin-top: 15px;
+    }
+
+    .contact p {
+        font-size: 2.1rem;
+    }
+
+    footer .social-media {
+        font-size: 2.7rem;
+    }
+
+    footer .links {
+        font-size: 2.3rem;
+    }
+
+    footer .credit {
+        font-size: 1.8rem;
+    }
+
+    footer .order {
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .services .package .paket1 h3 {
+        font-size: 2.5rem;
+    }
+
+    .services .package .paket1 p {
+        font-size: 2.3rem;
+    }
+
+    .services .package .paket2 h3 {
+        font-size: 2.5rem;
+    }
+
+    .services .package .paket2 p {
+        font-size: 2.3rem;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
+
