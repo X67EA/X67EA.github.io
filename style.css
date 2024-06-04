@@ -41,7 +41,7 @@ html {
 .navbar .navbar-logo a {
     color: #ffffff;
     margin-left: 8px;
-    font-family: "Fugaz One", cursive;
+    font-family: "Sacramento", cursive;
 }
 
 .navbar .navbar-logo img {
@@ -77,7 +77,6 @@ html {
 
 .navbar .navbar-extra a {
     color: #ffffff;
-    margin-right: 50px;
 }
 
 .navbar .navbar-extra a:hover {
@@ -134,7 +133,7 @@ html {
     border-radius: 4px;
     box-shadow: 1px 1px 3px rgba(1, 1, 1, 3, 0.5);
     margin-top: 15px;
-    font-family: "Sofia", cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero .content a:hover {
@@ -168,6 +167,7 @@ html {
 
 .about .row .about-img img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .about .row .content {
@@ -402,13 +402,13 @@ footer .order {
 /* Tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 62.5%;
+        font-size: 60%;
     }
 
     #hamburger-menu {
         display: inline-block;
-        font-size: 4rem;
-        margin-right: 15px;
+        font-size: 3rem;
+        padding-right: 25px;
     }
 
     .navbar .navbar-nav {
@@ -495,11 +495,11 @@ footer .order {
     }
 
     footer .links {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     footer .credit {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     footer .order {
